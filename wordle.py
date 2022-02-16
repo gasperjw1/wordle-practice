@@ -124,7 +124,7 @@ def main():
         lettersUsedButNotInAnswer = []
         lettersUsedAndInAnswer = []
 
-        for i in range(5):
+        for i in range(6):
             guess = ''
             while not checkWord(guess, guessList):
                 guess = input('Enter next guess: ')
@@ -146,7 +146,7 @@ def main():
                 pastWords.append("Round " + str(rounds) + ": " + answer + " in " + str(i+1) + " guesses")
                 print("\n\n")
                 break
-            elif i == 4:
+            elif i == 5:
                 pastWords.append("Round " + str(rounds) + ": " + answer + " in - guesses")
                 print("\n\n")
             else:
